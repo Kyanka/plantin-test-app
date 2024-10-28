@@ -1,0 +1,29 @@
+import { SVGProps } from "react";
+
+export function SearchIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <g clipPath="url(#clip0_1_526)">
+        <path
+          d="M19.5 19.5L24.5 24.5M21.5 14.5C21.5 18.366 18.366 21.5 14.5 21.5C10.634 21.5 7.5 18.366 7.5 14.5C7.5 10.634 10.634 7.5 14.5 7.5C18.366 7.5 21.5 10.634 21.5 14.5Z"
+          stroke="#C5D1DB"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_526">
+          <rect width="32" height="32" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
