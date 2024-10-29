@@ -12,7 +12,7 @@ type WeatherBarProps = {
 export function WeatherBar({ currentTemperature }: WeatherBarProps) {
   return (
     <div className="flex rounded-2xl bg-greeny bg-opacity-15 items-end justify-between">
-      <div className="py-14 pl-14 flex flex-col gap-4 h-full">
+      <div className="py-14 px-4 sm:px-0 sm:pl-14 flex flex-col gap-4 h-full">
         <h1 className="font-extrabold text-4xl text-greeny-text">
           {C.STAY_TUNNED}
         </h1>
@@ -29,7 +29,7 @@ export function WeatherBar({ currentTemperature }: WeatherBarProps) {
           <SearchIcon />
         </Field>
       </div>
-      <WeatherIcon />
+      <WeatherIcon className="hidden sm:block" />
     </div>
   );
 }

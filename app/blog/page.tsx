@@ -4,5 +4,7 @@ import { nextApiFetch } from "@/utils/services";
 export default async function Blog() {
   const currentTemperature = await nextApiFetch("/weather");
 
-  return <BlogContent currentTemperature={currentTemperature} />;
+  const posts = await nextApiFetch("/posts");
+
+  return <BlogContent currentTemperature={currentTemperature} posts={posts} />;
 }

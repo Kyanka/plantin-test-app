@@ -16,7 +16,8 @@ module.exports = {
           text: "#04BF94",
         },
         graylish: {
-          DEFAULT: "#91A0B6",
+          DEFAULT: "#ADB8C8",
+          500: "#78787A",
         },
       },
     },
